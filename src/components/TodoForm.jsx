@@ -28,7 +28,12 @@ const TodoForm = ({ addTodo }) => {
                     <option value="Pessoal">Pessoal</option>
                     <option value="Estudos">Estudos</option>
                 </select>
-                <button type="submit">Criar tarefa</button>
+                <input
+                    type="image" 
+                    src="../../../add.png" 
+                    style={{ width: '44px', height: '44px', outline: 'none', border: 'none', boxShadow: 'none' }}
+                />
+                {/* "https://www.flaticon.com/free-icons/create" */}
             </form>
         </div>
    )

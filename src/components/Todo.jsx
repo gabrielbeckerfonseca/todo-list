@@ -10,14 +10,20 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
               <p>{todo.text}</p>
               <p className="category">({todo.category})</p>
     </div>
-        <div>
-            <button className="complete" onClick={() => completeTodo(todo.id)}>
-              Completar
-            </button>
-            <button className="remove" onClick={() => removeTodo(todo.id)}>
-              Excluir
-            </button>
-        </div>
+    <div>        
+      <img 
+        src="../../../checked.png" 
+        onClick={() => completeTodo(todo.id)}
+        style={{ cursor: 'pointer', width: '34px', height: '34px', marginRight: '10px' }} 
+      />
+      {/* "https://www.flaticon.com/free-icons/tick" */}
+      <img 
+        src="../../../delete.png" 
+        onClick={() => removeTodo(todo.id)}
+        style={{ cursor: 'pointer', width: '34px', height: '34px',  }} 
+      />
+      {/* "https://www.flaticon.com/free-icons/recycle-bin" */}
+    </div>
     </div>
   )
 }

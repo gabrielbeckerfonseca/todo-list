@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap');
+
 body{ 
-  font-family: Arial;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 20px; 
   background-color: #f4f4f4;
   padding: 30px;
   color: #333;
-  background-image: url(./b000.jpg);
+  background-image: url(./bg000.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -55,6 +64,8 @@ button:hover {
 }
 
 .todo{
+  font-family: "Shadows Into Light", cursive;
+  font-size: 23px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px;

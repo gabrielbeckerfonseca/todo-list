@@ -11,20 +11,38 @@ function App() {
   const [todos, setTodos] = useState([
     {
       id: 1,
-      text: "Criar um projeto em react",
-      category: "Trabalho",
-      isCompleted: false
-    },
-    {
-      id: 2,
-      text: "Treinar biceps e triceps",
+      text: "Lavar e secar a roupa",
       category: "Pessoal",
       isCompleted: false
     },
     {
       id: 3,
-      text: "Estudar react",
+      text: "Estudar para a prova de Desenvolvimento Web",
       category: "Estudos",
+      isCompleted: false
+    },
+    {
+      id: 5,
+      text: "Participar da reunião interdisciplinar",
+      category: "Trabalho",
+      isCompleted: false
+    },
+    {
+      id: 6,
+      text: "Cozinhar a comida para semana",
+      category: "Pessoal",
+      isCompleted: false
+    },
+    {
+      id: 9,
+      text: "Lavar e aspirar o carro",
+      category: "Pessoal",
+      isCompleted: false
+    },
+    {
+      id: 10,
+      text: "Ir ao mercado",
+      category: "Pessoal",
       isCompleted: false
     }
   ])
@@ -66,7 +84,14 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Lista de Tarefas</h1>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <img 
+          src="../../../checklist.png" 
+          alt="" 
+          style={{ width: '44px', height: '44px', marginRight: '30px' }} 
+        />
+        <h1 style={{ marginRight: '30px' }}>Lista de Tarefas</h1>
+      </div>      
       <Search search={search} setSearch={setSearch} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       <div className="todo-list">
