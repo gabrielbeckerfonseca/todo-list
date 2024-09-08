@@ -11,19 +11,22 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
               <p className="category">({todo.category})</p>
     </div>
     <div>        
-      <img 
-        src="../../../checked.png" 
-        className="img"
-        onClick={() => completeTodo(todo.id)}
-      />
-      {/* "https://www.flaticon.com/free-icons/tick" */}
-      <img 
-        src="../../../delete.png"
-        className="img" 
-        onClick={() => removeTodo(todo.id)}
-      />
-      {/* "https://www.flaticon.com/free-icons/recycle-bin" */}
-    </div>
+  <img 
+    src="../../../checked.png" 
+    className="img"
+    alt="Marcar tarefa como concluída"
+    title="Marcar como concluída"
+    onClick={() => completeTodo(todo.id)}
+  />
+  <img 
+    src="../../../delete.png"
+    className="img" 
+    alt="Remover tarefa"
+    title="Remover tarefa"
+    onClick={() => removeTodo(todo.id)}
+  />
+</div>
+
     </div>
   )
 }

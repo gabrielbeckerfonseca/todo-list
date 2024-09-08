@@ -32,7 +32,10 @@ const TodoForm = ({ addTodo }) => {
                     type="image" 
                     src="../../../add.png" 
                     style={{ width: '44px', height: '44px', outline: 'none', border: 'none', boxShadow: 'none' }}
+                    alt="Adicionar item"
+                    title="Adicionar item"
                 />
+
                 {/* "https://www.flaticon.com/free-icons/create" */}
             </form>
         </div>

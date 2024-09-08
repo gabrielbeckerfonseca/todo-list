@@ -85,13 +85,14 @@ function App() {
   return (
     <div className="app">
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img 
-          src="../../../checklist.png" 
-          alt="" 
-          style={{ width: '44px', height: '44px', marginRight: '30px' }} 
-        />
-        <h1 style={{ marginRight: '30px' }}>Lista de Tarefas</h1>
-      </div>      
+  <img 
+    src="../../../checklist.png" 
+    alt="Ícone de checklist"
+    title="Ícone de checklist"
+    style={{ width: '44px', height: '44px', marginRight: '30px' }} 
+  />
+  <h1 style={{ marginRight: '30px' }}>Lista de Tarefas</h1>
+      </div>
       <Search search={search} setSearch={setSearch} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       <div className="todo-list">
