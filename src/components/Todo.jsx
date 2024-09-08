@@ -13,14 +13,14 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
     <div>        
       <img 
         src="../../../checked.png" 
+        className="img"
         onClick={() => completeTodo(todo.id)}
-        style={{ cursor: 'pointer', width: '34px', height: '34px', marginRight: '10px' }} 
       />
       {/* "https://www.flaticon.com/free-icons/tick" */}
       <img 
-        src="../../../delete.png" 
+        src="../../../delete.png"
+        className="img" 
         onClick={() => removeTodo(todo.id)}
-        style={{ cursor: 'pointer', width: '34px', height: '34px',  }} 
       />
       {/* "https://www.flaticon.com/free-icons/recycle-bin" */}
     </div>
