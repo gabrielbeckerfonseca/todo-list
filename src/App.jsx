@@ -86,7 +86,8 @@ function App() {
     <div className="app">
       <div style={{ display: 'flex', alignItems: 'center' }}>
   <img 
-    src="../../../checklist.png" 
+    src="/icons/checklist.png"
+    
     alt="Ícone de checklist"
     title="Ícone de checklist"
     style={{ width: '44px', height: '44px', marginRight: '30px' }} 

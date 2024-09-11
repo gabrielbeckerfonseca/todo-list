@@ -12,14 +12,14 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
     </div>
     <div>        
   <img 
-    src="../../../checked.png" 
+    src="/icons/checked.png" 
     className="img"
     alt="Marcar tarefa como concluída"
     title="Marcar como concluída"
     onClick={() => completeTodo(todo.id)}
   />
   <img 
-    src="../../../delete.png"
+    src="/icons/delete.png"
     className="img" 
     alt="Remover tarefa"
     title="Remover tarefa"

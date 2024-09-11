@@ -30,7 +30,7 @@ const TodoForm = ({ addTodo }) => {
                 </select>
                 <input
                     type="image" 
-                    src="../../../add.png" 
+                    src="/icons/add.png" 
                     style={{ width: '44px', height: '44px', outline: 'none', border: 'none', boxShadow: 'none' }}
                     alt="Adicionar item"
                     title="Adicionar item"
